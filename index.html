@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <h1>Comparision Sorting Algorithm</h1>
+        </div>
+    </header>
+    <div class="btns">
+        <button class="btn" onclick="randomizeArray(org_arr)">Randomize array</button>
+        <button class="btn" onclick="insertionSort(org_arr)">Insertion sort</button>
+        <button class="btn" onclick="selectionSort(org_arr)">Selection sort</button>
+        <button class="btn" onclick="bubbleSort(org_arr)">Bubble sort</button>
+        <button class="btn" onclick="createbars(quickSort(org_arr))">Quick sort</button>
+        <button class="btn" onclick="createbars(mergeSort(org_arr))">Merge sort</button>
+        <button class="btn" onclick="shellSort(org_arr)">shell sort</button>
+        <button class="btn" onclick="changeSize()">Change size by half</button>
+    </div>
+    <div class="container">
+    </div>
+    <footer class="footer">
+    <div class="footer_btns">
+    <button class="ftr_btn">Skip back</button>
+    <button class="ftr_btn">step back</button>
+    <button class="ftr_btn">pause</button>
+    <button class="ftr_btn">step forward</button>
+    <button class="ftr_btn">skip forward</button>
+    <span class="slider">
+    <input type="range" min="20" max="500" value="50"/>
+    </span>
+    <label>W:</label>
+    <input type="number"/>
+    <label>H:</label>
+    <input type="number"/>
+    <button class="ftr_btn">change canvas size</button>
+    <button class="ftr_btn">move controls</button>
+    </div>
+    <div class="ftr_des"><h1>Algorithm Visualization</h1></div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
